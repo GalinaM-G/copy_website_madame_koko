@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+@import '_reset';
+@import '_fonts';
+@import '_vars';
+@import '_mixins';
+@import 'global';
+
+.header {
+    height: 100vh;
+}
+
+.logo {
+
+    &__img {
+      max-width: 120px;  
+    }
+    
+}
+
+
+
+
+
