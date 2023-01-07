@@ -116,6 +116,17 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  padding: 12px 32px;
+  font-size: 18px;
+  line-height: 1.3;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: background-color 0.4s, color 0.3s;
+  -o-transition: background-color 0.4s, color 0.3s;
+  transition: background-color 0.4s, color 0.3s;
+}
+
 .header {
   height: 100vh;
 }
