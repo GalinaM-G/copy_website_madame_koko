@@ -10,6 +10,7 @@
     <link rel="manifest" href="./images/favicon/site.webmanifest">
     <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
+    
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -139,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery section">
             <div class="container">
                 <h2 class="gallery__title title">Photos of <span>interior</span></h2>
                 <ul class="gallery__items">
@@ -176,7 +177,7 @@
                 </ul>
             </div>
         </section>
-        <section class="offer">
+        <section class="offer section">
             <div class="container">
                 <h2 class="offer__title title">We are pleased to offer <span>You</span></h2>
                 <div class="offer__content">
@@ -673,12 +674,31 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact section">
             <div class="container">
                 <div class="contact__content">
                     <div class="contact__form">
-
+                        <h2 class="contact__title">
+                            Reservations for <span>desk</span>
+                        </h2>
+                        <div class="contact__text">
+                            <p>
+                                Select the date and number of Guests. An administrator will contact you to confirm your
+                                reservation.
+                            </p>
+                        </div>
                         <form class="form" action="#">
+                            <input class="form__input" type="text" name="name" placeholder="Your name" required>
+                            <input class="form__input form__input--tel" type="tel" name="telephone" required>
+                            <label for="date">Booking date <span>&#42;</span></label>
+                            <input class="form__input" type="date" name="date" id="date">
+
+                            <label for="number">Number of guests <span>&#42;</span></label>
+                            <input class="form__input" type="number" name="number" id="number" placeholder="1 person">
+
+                            <label for="time">Time selection <span>&#42;</span></label>
+                            <input class="form__input" type="time" name="time" id="time">
+                            <button class="form__btn btn">send</button>
 
                         </form>
                     </div>
@@ -692,9 +712,52 @@
             </div>
 
         </section>
+        <section class="slider section">
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <ul class="swiper-wrapper">
+                        <!-- Slides -->
+                        <li class="swiper-slide">
+                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            <div class="swiper-slider__text">
+                                <p>gjhgjh</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            <div class="swiper-slider__text">
+                                <p>gjhgjh</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            <div class="swiper-slider__text">
+                                <p>gjhgjh</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            <div class="swiper-slider__text">
+                                <p>gjhgjh</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer class="footer"></footer>
     <script src="js/main.js"></script>
+   
+    </script>
+    
 </body>
 </html>
