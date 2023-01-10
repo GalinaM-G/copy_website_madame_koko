@@ -34,7 +34,7 @@
   &__info {
     text-align: center;
     width: 88%;
-    background-color: #ffffff;
+    background-color: var(--clr-white);
     padding: rem(15);
     margin-top: rem(-30);
   }
@@ -42,14 +42,13 @@
   &__price {
     display: block;
     text-transform: uppercase;
-    color: #5f6e1e;
     font-weight: 600;
     margin-bottom: rem(10);
   }
 
   &__title {
     font-size: rem(18);
-    color: #242424;
+    color: var(--clr-title-secondary);
     margin-bottom: rem(10);
   }
 }

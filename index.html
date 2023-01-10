@@ -10,7 +10,7 @@
     <link rel="manifest" href="./images/favicon/site.webmanifest">
     <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    
+
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -23,7 +23,7 @@
                     <a class="logo" href="#">
                         <img class="logo__img" src="./images/logo.png" alt="logo">
                     </a>
-                    <button class="menu__btn btn">reservation</button>
+                    <a class="menu__btn btn" href="#">reservation</a>
                     <button class="menu_burger-btn" type="button">
                         <span class="sr-only">Open menu</span>
                         <span></span>
@@ -721,44 +721,57 @@
                     <ul class="swiper-wrapper">
                         <!-- Slides -->
                         <li class="swiper-slide">
-                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            <a class="swiper-slide__link" href="#">
+                                <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                            </a>
                             <div class="swiper-slider__text">
-                                <p>gjhgjh</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum reprehenderit
+                                    cumque minima voluptatum ducimus aspernatur pariatur omnis ut quam.</p>
                             </div>
                         </li>
-                        <li class="swiper-slide">
-                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
-                            <div class="swiper-slider__text">
-                                <p>gjhgjh</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
-                            <div class="swiper-slider__text">
-                                <p>gjhgjh</p>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
-                            <div class="swiper-slider__text">
-                                <p>gjhgjh</p>
-                            </div>
-                        </li>
-                        
                     </ul>
                     <!-- navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-
                 </div>
             </div>
         </section>
-
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__menu menu">
+                <a class="logo" href="#">
+                    <img class="logo__img logo__img--black" src="./images/logo_black.png" alt="logo">
+                </a>
+                <ul class="footer__list menu__list">
+                    <li class="menu__item ">
+                        <a class="menu__link" href="#home">
+                            home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            chef-cook
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            contacts
+                        </a>
+                    </li>
+                </ul>
+                <a class="footer__social" href="https://www.instagram.com/madamekoko.by/" target="_blank">
+                    <span >
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/5d1ea5729c.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-   
+
     </script>
-    
+
 </body>
 </html>

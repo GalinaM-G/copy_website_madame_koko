@@ -1,3 +1,21 @@
+:root {
+    --clr-white: #ffffff;
+
+    --clr-title-primary: #333333;
+    --clr-title-secondary: #242424;
+    --clr-font-primary: #777777;
+
+    --clr-btn-text: #3e3e3e;
+    --clr-btn-bgr: #f3f3f3;
+    --clr-btn-hov: #a9a9a9;
+
+    --clr-btns-text: #ffffff;
+    --clr-btns-bgr: #5F6E1E;
+
+    --ff-primary: 'Arial','Helvetica', sans-serif;
+    --ff-secondary: 'Lato';
+}
+
 html,
 body {
     height: 100%;
@@ -6,12 +24,12 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Arial','Helvetica', sans-serif;
+    font-family: var(--ff-primary);
     font-weight: 400;
     font-size: rem(14);
-    color: #777777;
+    color: var(--clr-font-primary);
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: var(--clr-white);
     overflow-x: hidden;
 }
 
@@ -40,11 +58,12 @@ body {
 }
 
 .btn {
-    padding: 12px 32px;
-    font-size: 18px;
+    padding: 12px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #000000;
+    // background-color: var(--clr-white);
+    // color: var(--clr-button-text);
     transition: background-color 0.4s, color 0.3s;
 }
 
