@@ -1,19 +1,21 @@
 :root {
-    --clr-white: #ffffff;
+    --clr-white: #fff;
+    --clr-black-op: rgba(0, 0, 0, 0.751);
 
-    --clr-title-primary: #333333;
+    --clr-title-primary: #333;
     --clr-title-secondary: #242424;
-    --clr-font-primary: #777777;
+    --clr-font-primary: #777;
 
     --clr-btn-text: #3e3e3e;
     --clr-btn-bgr: #f3f3f3;
     --clr-btn-hov: #a9a9a9;
 
-    --clr-btns-text: #ffffff;
+    --clr-btns-text: #fff;
     --clr-btns-bgr: #5F6E1E;
 
-    --ff-primary: 'Arial','Helvetica', sans-serif;
+    --ff-primary: 'Arial', 'Helvetica', sans-serif;
     --ff-secondary: 'Lato';
+    --ff-subtitle-header: 'Playfair Display';
 }
 
 html,
@@ -62,8 +64,7 @@ body {
     font-size: 13px;
     text-transform: uppercase;
     line-height: 1.6;
-    // background-color: var(--clr-white);
-    // color: var(--clr-button-text);
+    
     transition: background-color 0.4s, color 0.3s;
 }
 
@@ -74,18 +75,12 @@ body {
 //     line-height: 1.3;
 //     margin-bottom: 45px;
 
-    
+
 // }
 
 // .section {
 //     padding-top: 120px;
 //     text-align: center;
-    
+
 
 // }
-
-
-
-
-
-  

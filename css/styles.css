@@ -69,17 +69,19 @@ a {
 }
 
 :root {
-  --clr-white: #ffffff;
-  --clr-title-primary: #333333;
+  --clr-white: #fff;
+  --clr-black-op: rgba(0, 0, 0, 0.751);
+  --clr-title-primary: #333;
   --clr-title-secondary: #242424;
-  --clr-font-primary: #777777;
+  --clr-font-primary: #777;
   --clr-btn-text: #3e3e3e;
   --clr-btn-bgr: #f3f3f3;
   --clr-btn-hov: #a9a9a9;
-  --clr-btns-text: #ffffff;
+  --clr-btns-text: #fff;
   --clr-btns-bgr: #5F6E1E;
-  --ff-primary: "Arial","Helvetica", sans-serif;
+  --ff-primary: "Arial", "Helvetica", sans-serif;
   --ff-secondary: "Lato";
+  --ff-subtitle-header: "Playfair Display";
 }
 
 html,
@@ -141,11 +143,68 @@ body {
 }
 
 .header {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
-
-.logo__img {
+.header__top {
+  position: fixed;
+  width: 100%;
+  background-color: var(--clr-black-op);
+  z-index: 10;
+}
+.header__center {
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+.header__title {
+  font-family: var(--ff-secondary);
+  font-weight: 300;
+  letter-spacing: 0.0625rem;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  color: var(--clr-white);
+}
+.header__subtitle {
+  font-family: var(--ff-subtitle-header);
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-size: 1.4375rem;
+  font-weight: 700;
+}
+.header__subtitle span {
+  display: block;
+  font-style: italic;
+}
+.header .logo__img {
   max-width: 120px;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0;
+}
+.header .menu__list {
+  display: none;
+}
+.header .menu__btn {
+  background-color: var(--clr-white);
+  color: var(--clr-btn-text);
 }
 
 .offer__item {
