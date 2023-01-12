@@ -320,6 +320,12 @@
     padding: rem(10);
   }
 
+  &__link {
+    &:hover {
+      color: var(--clr-btn-hov);
+    }
+  }
+
   &__social {
     display: flex;
     justify-content: center;

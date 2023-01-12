@@ -469,6 +469,9 @@ body {
 .footer__menu-item {
   padding: 0.625rem;
 }
+.footer__link:hover {
+  color: var(--clr-btn-hov);
+}
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
