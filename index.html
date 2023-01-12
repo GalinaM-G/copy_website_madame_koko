@@ -371,7 +371,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <ul class="offer__item tabs__apetizers">
+                        <!-- <ul class="offer__item tabs__apetizers">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/appetizers/salmon.jpg"
@@ -672,7 +672,7 @@
                                     </div>
                                 </article>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -681,7 +681,7 @@
             <div class="container">
                 <div class="contact__content">
                     <div class="contact__form">
-                        <h2 class="contact__title">
+                        <h2 class="contact__title title">
                             Reservations for <span>desk</span>
                         </h2>
                         <div class="contact__text">
@@ -691,18 +691,20 @@
                             </p>
                         </div>
                         <form class="form" action="#">
-                            <input class="form__input" type="text" name="name" placeholder="Your name" required>
-                            <input class="form__input form__input--tel" type="tel" name="telephone" required>
-                            <label for="date">Booking date <span>&#42;</span></label>
-                            <input class="form__input" type="date" name="date" id="date">
+                            <div class="form__content">
+                                <input class="form__input" type="text" name="name" placeholder="Your name" required>
+                                <input class="form__input form__input--tel" type="tel" name="telephone" required>
+                                <label class="form__lable" for="date">Booking date <span>&#42;</span></label>
+                                <input class="form__input" type="date" name="date" id="date">
 
-                            <label for="number">Number of guests <span>&#42;</span></label>
-                            <input class="form__input" type="number" name="number" id="number" placeholder="1 person">
+                                <label class="form__lable" for="number">Number of guests <span>&#42;</span></label>
+                                <input class="form__input" type="number" name="number" id="number"
+                                    placeholder="1 person">
 
-                            <label for="time">Time selection <span>&#42;</span></label>
-                            <input class="form__input" type="time" name="time" id="time">
+                                <label class="form__lable" for="time">Time selection <span>&#42;</span></label>
+                                <input class="form__input" type="time" name="time" id="time">
+                            </div>
                             <button class="form__btn btn">send</button>
-
                         </form>
                     </div>
                     <div class="contact__map">
@@ -713,22 +715,21 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="slider section">
             <div class="container">
                 <!-- Slider main container -->
                 <div class="swiper">
                     <!-- Additional required wrapper -->
-                    <ul class="swiper-wrapper">
+                    <ul class="swiper__wrapper">
                         <!-- Slides -->
-                        <li class="swiper-slide">
-                            <a class="swiper-slide__link" href="#">
-                                <img class="swiper-slide__img" src="./images/slider/slider_1.jpg" alt="">
+                        <li class="swiper__slide">
+                            <a class="swiper__link" href="#">
+                                <img class="swiper__img" src="./images/slider/slider_1.jpg" alt="">
                             </a>
-                            <div class="swiper-slider__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum reprehenderit
-                                    cumque minima voluptatum ducimus aspernatur pariatur omnis ut quam.</p>
+                            <div class="swiper__text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat magni. Iste libero iusto exercitationem repellendus officiis minus vero perferendis, molestias et nemo, impedit repellat.
+                                </p>
                             </div>
                         </li>
                     </ul>
@@ -739,32 +740,32 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
-            <nav class="footer__menu menu">
-                <a class="logo" href="#">
+            <nav class="footer__menu">
+                <a class="logo footer__logo" href="#">
                     <img class="logo__img logo__img--black" src="./images/logo_black.png" alt="logo">
                 </a>
-                <ul class="footer__list menu__list">
-                    <li class="menu__item ">
-                        <a class="menu__link" href="#home">
+                <ul class="footer__menu-items">
+                    <li class="footer__menu-item">
+                        <a class="footer__link" href="#home">
                             home
                         </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
+                    <li class="footer__menu-item">
+                        <a class="footer__link" href="#home">
                             chef-cook
                         </a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
+                    <li class="footer__menu-item">
+                        <a class="footer__link" href="#home">
                             contacts
                         </a>
                     </li>
                 </ul>
                 <a class="footer__social" href="https://www.instagram.com/madamekoko.by/" target="_blank">
                     <span>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram footer__insta"></i>
                     </span>
                 </a>
             </nav>
