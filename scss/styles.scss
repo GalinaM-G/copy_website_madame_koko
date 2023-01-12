@@ -128,7 +128,6 @@
       font-weight: 600;
       background-color: var(--clr-white);
       color: var(--clr-btn-text);
-
     }
 
     .hover-btn:hover {
@@ -160,10 +159,8 @@
 
 .offer {
 
-
-
   &__buttons {
-    margin-bottom: rem(30);
+    margin-bottom: rem(20);
     display: flex;
     gap: rem(30);
     // overflow-x: auto;
@@ -171,9 +168,15 @@
   }
 
   &__btn {
+    color: inherit;
+    font-weight: 600;
     white-space: nowrap;
     position: relative;
     overflow: hidden;
+
+    &:hover {
+      color: var(--clr-title-primary)
+    }
 
     &::after {
       content: '';
@@ -182,10 +185,9 @@
       left: 0;
       width: 100%;
       height: rem(2);
-      background-color: hotpink;
+      background-color: var(--clr-btns-bgr);
       opacity: 1;
       transform: translate3d(-200%, 0, 0);
-
       transition: opacity 300ms, transform 300ms;
     }
 
@@ -194,41 +196,151 @@
     }
   }
 
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
 
+    &__info {
+      text-align: center;
+      width: 88%;
+      background-color: var(--clr-white);
+      padding: rem(15);
+      margin-top: rem(-30);
+    }
+
+    &__price {
+      display: block;
+      color: var(--clr-btns-bgr);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: rem(10);
+    }
+
+    &__title {
+      font-size: rem(18);
+      color: var(--clr-title-secondary);
+      margin-bottom: rem(10);
+    }
+  }
 
 }
 
-
-
-
-
-
-
-
-.product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-
-  &__info {
-    text-align: center;
-    width: 88%;
-    background-color: var(--clr-white);
-    padding: rem(15);
-    margin-top: rem(-30);
-  }
-
-  &__price {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: rem(10);
-  }
+.contact {
+  background-color: #000;
+  color: var(--clr-white);
 
   &__title {
+    color: var(--clr-white);
+    font-size: rem(24);
+
+    &::before {
+      background-image: url("../images/icon-logo-white.png");
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: rem(25);
+  }
+
+  .form {
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+
+    &__content {
+      margin-bottom: rem(40);
+    }
+
+    &__btn {
+
+      background-color: var(--clr-btns-bgr);
+      color: var(--clr-btns-text);
+      margin-bottom: rem(100);
+
+      &:hover {
+        background-color: var(--clr-btns-hover);
+      }
+    }
+
+    &__lable {
+      margin-bottom: rem(3);
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: rem(15);
+
+      &--tel {
+        width: 80%;
+      }
+    }
+
+  }
+
+}
+
+.slider {
+
+  .swiper {
+    &__text p {
+      padding: rem(5) 0;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+
+  &__logo {
+    margin-bottom: rem(20);
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu-items {
+    display: flex;
+    gap: rem(30);
+    text-transform: uppercase;
+    color: var(--clr-title-primary);
+    font-size: rem(13);
+    font-weight: 600;
+    margin-bottom: rem(20);
+  }
+
+  &__menu-item {
+    padding: rem(10);
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(10) rem(12) rem(7);
+    border: 2px solid #d0d0d0;
+    margin-bottom: rem(30);
+
+    &:hover {
+      background-color: #774430;
+      border: 2px solid transparent;
+    }
+
+  }
+
+  &__insta {
     font-size: rem(18);
-    color: var(--clr-title-secondary);
-    margin-bottom: rem(10);
+    color: #898989;
+  }
+
+  &__social:hover &__insta {
+    color: var(--clr-white);
   }
 }
