@@ -691,18 +691,23 @@
                             </p>
                         </div>
                         <form class="form" action="#">
-                            <div class="form__content">
-                                <input class="form__input" type="text" name="name" placeholder="Your name" required>
+                            <div class="form__top">
+                                <input class="form__input form__input--text" type="text" name="name" placeholder="Your name" required>
                                 <input class="form__input form__input--tel" type="tel" name="telephone" required>
-                                <label class="form__lable" for="date">Booking date <span>&#42;</span></label>
-                                <input class="form__input" type="date" name="date" id="date">
-
-                                <label class="form__lable" for="number">Number of guests <span>&#42;</span></label>
-                                <input class="form__input" type="number" name="number" id="number"
-                                    placeholder="1 person">
-
-                                <label class="form__lable" for="time">Time selection <span>&#42;</span></label>
-                                <input class="form__input" type="time" name="time" id="time">
+                            </div>
+                            <div class="form__bottom">
+                                <div class="form__content">
+                                    <label class="form__lable" for="date">Booking date <span>&#42;</span></label>
+                                    <input class="form__input" type="date" name="date" id="date">
+                                </div>
+                                <div class="form__content">
+                                    <label class="form__lable" for="number">Number of guests <span>&#42;</span></label>
+                                    <input class="form__input" type="number" name="number" id="number" placeholder="1 person">
+                                </div>
+                                <div class="form__content">
+                                    <label class="form__lable" for="time">Time selection <span>&#42;</span></label>
+                                    <input class="form__input" type="time" name="time" id="time">
+                                </div>
                             </div>
                             <button class="form__btn btn">send</button>
                         </form>
@@ -728,7 +733,9 @@
                                 <img class="swiper__img" src="./images/slider/slider_1.jpg" alt="">
                             </a>
                             <div class="swiper__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat magni. Iste libero iusto exercitationem repellendus officiis minus vero perferendis, molestias et nemo, impedit repellat.
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, placeat magni.
+                                    Iste libero iusto exercitationem repellendus officiis minus vero perferendis,
+                                    molestias et nemo, impedit repellat.
                                 </p>
                             </div>
                         </li>
