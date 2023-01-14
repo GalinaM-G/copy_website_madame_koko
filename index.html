@@ -23,78 +23,79 @@
                     <a class="logo" href="#">
                         <img class="logo__img" src="./images/logo.png" alt="logo">
                     </a>
-                    <div class="menu__buttons">
+                    <ul class="menu__list">
+                        <li class="menu__item ">
+                            <a class="menu__link" href="#home">
+                                home
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#chef">
+                                chef
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                holidays
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#holidays">
+                                menu
+                            </a>
+                            <ul class="menu__sub dropdown">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        breakfast
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        apetizers
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        salads
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        hot dishes
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        deserts
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        wine sets
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#english">
+                                english
+                            </a>
+                            <ul class="menu__sub dropdown">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        russian
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="menu__btns">
+                        <a class="menu__btn btn hover-btn menu__btn--tel" href="tel:+375296778989">+375(29)6778989</a>
                         <a class="menu__btn btn hover-btn" href="#">reservation</a>
                         <button class="menu__burger burger " type="button">
                             <span class="sr-only">Open menu</span>
                             <span class="burger__item"></span>
                         </button>
-                        <ul class="menu__list">
-                            <li class="menu__item ">
-                                <a class="menu__link hover-btn" href="#home">
-                                    home
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link hover-btn" href="#chef">
-                                    chef
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link hover-btn" href="#holidays">
-                                    holidays
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link hover-btn" href="#holidays">
-                                    menu
-                                </a>
-                                <ul class="menu__sub dropdown">
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            breakfast
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            apetizers
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            salads
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            hot dishes
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            deserts
-                                        </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            wine sets
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link animation" href="#english">
-                                    english
-                                </a>
-                                <ul class="menu__sub dropdown">
-                                    <li class="dropdown__item">
-                                        <a class="dropdown__link" href="#">
-                                            russian
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
                 </nav>
             </div>
@@ -115,30 +116,36 @@
             <div class="container">
                 <div class="legend__content">
                     <img class="legend__img" src="./images/legend__img.jpg" alt="Koko the Cat">
-                    <h2 class="legend__title title">Restaurant <span>legend</span></h2>
-                    <div class="legend__text">
-                        <p>Madame Koko – who is she? Which name was taken as a base for naming the most comfortable
-                            place in one of the overcrowded
-                            and historically valued streets of the city? Koko is a cat, living nowadays, but imagination
-                            has transferred her into
-                            the world of ladies and gentlemen of aristocratic origin.
-                        </p>
-                        <p>
-                            Koko has many friends, which portraits are placed all over the restaurant: Cardinal Foie
-                            Gras, Admiral Kish, Prince
-                            Mimolet, Baron Cruton, Duke Camus. With them and the rest You can become acquainted while
-                            visiting “Madame Koko”. Koko’s
-                            portrait is written by young and very talented artist Ekaterina Malinovskaya and took
-                            central place in the restaurant.
-                        </p>
-                        <p>
-                            The special place in the restaurant is held by Albert Finger piano from 1893 and a string
-                            gramophone of the early 20th
-                            century. “Madame Koko’s” conception foresees holding musical and poetical evenings.
-                        </p>
-                        <p>
-                            Also, the author’s cuisine of Chef brightly complements the unusual idea of the restaurant.
-                        </p>
+                    <div class="legend__inner">
+                        <h2 class="legend__title title">Restaurant <span>legend</span></h2>
+                        <div class="legend__text">
+                            <p>Madame Koko – who is she? Which name was taken as a base for naming the most comfortable
+                                place in one of the overcrowded
+                                and historically valued streets of the city? Koko is a cat, living nowadays, but
+                                imagination
+                                has transferred her into
+                                the world of ladies and gentlemen of aristocratic origin.
+                            </p>
+                            <p>
+                                Koko has many friends, which portraits are placed all over the restaurant: Cardinal Foie
+                                Gras, Admiral Kish, Prince
+                                Mimolet, Baron Cruton, Duke Camus. With them and the rest You can become acquainted
+                                while
+                                visiting “Madame Koko”. Koko’s
+                                portrait is written by young and very talented artist Ekaterina Malinovskaya and took
+                                central place in the restaurant.
+                            </p>
+                            <p>
+                                The special place in the restaurant is held by Albert Finger piano from 1893 and a
+                                string
+                                gramophone of the early 20th
+                                century. “Madame Koko’s” conception foresees holding musical and poetical evenings.
+                            </p>
+                            <p>
+                                Also, the author’s cuisine of Chef brightly complements the unusual idea of the
+                                restaurant.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -692,7 +699,8 @@
                         </div>
                         <form class="form" action="#">
                             <div class="form__top">
-                                <input class="form__input form__input--text" type="text" name="name" placeholder="Your name" required>
+                                <input class="form__input form__input--text" type="text" name="name"
+                                    placeholder="Your name" required>
                                 <input class="form__input form__input--tel" type="tel" name="telephone" required>
                             </div>
                             <div class="form__bottom">
@@ -702,7 +710,8 @@
                                 </div>
                                 <div class="form__content">
                                     <label class="form__lable" for="number">Number of guests <span>&#42;</span></label>
-                                    <input class="form__input" type="number" name="number" id="number" placeholder="1 person">
+                                    <input class="form__input" type="number" name="number" id="number"
+                                        placeholder="1 person">
                                 </div>
                                 <div class="form__content">
                                     <label class="form__lable" for="time">Time selection <span>&#42;</span></label>
@@ -771,9 +780,9 @@
                     </li>
                 </ul>
                 <a class="footer__social" href="https://www.instagram.com/madamekoko.by/" target="_blank">
-                    <span>
-                        <i class="fa-brands fa-instagram footer__insta"></i>
-                    </span>
+
+                    <i class="fa-brands fa-instagram footer__insta"></i>
+
                 </a>
             </nav>
         </div>

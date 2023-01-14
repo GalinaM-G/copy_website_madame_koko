@@ -34,6 +34,15 @@
     font-size: rem(14);
     color: var(--clr-white);
     margin-bottom: rem(38);
+
+    @media screen and (min-width: 576px) {
+      font-size: rem(16);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: rem(17);
+    }
+
   }
 
   &__subtitle {
@@ -42,6 +51,15 @@
     text-transform: uppercase;
     font-size: rem(23);
     font-weight: 700;
+
+    @media screen and (min-width: 576px) {
+      font-size: rem(33);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: rem(37);
+    }
+
   }
 
   &__subtitle span {
@@ -72,13 +90,30 @@
     align-items: center;
     padding: rem(15) 0;
 
-    &__buttons {
-      display: flex;
-      align-items: center;
+    &__list {
+      display: none;
 
+      @media screen and (min-width: 992px) {
+        display: flex;
+        gap: rem(30);
+        text-transform: uppercase;
+        font-size: rem(13);
+        color: var(--clr-white);
+        font-weight: 600;
+      }
     }
 
-    &__list {
+    &__link {
+      transition: color 0.3s;
+
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--clr-btn-hov);
+        }
+      }
+    }
+
+    .dropdown {
       display: none;
     }
 
@@ -89,6 +124,10 @@
       height: 44px;
       margin-right: rem(5);
       z-index: 13;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
 
       &__item {
         position: absolute;
@@ -124,10 +163,33 @@
       }
     }
 
+    &__btns {
+      display: flex;
+      align-items: center;
+      @media screen and (min-width: 992px) {
+        gap: rem(20);
+      }
+    }
+
     &__btn {
       font-weight: 600;
       background-color: var(--clr-white);
       color: var(--clr-btn-text);
+      margin-left: auto;
+
+      &--tel {
+        display: none;
+
+        @media screen and (min-width: 992px) {
+          display: block;
+        }
+
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-left: 0;
+
+      }
     }
 
     .hover-btn:hover {
@@ -143,11 +205,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   &__img {
     margin-bottom: rem(10);
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      margin-bottom: rem(0);
+      margin-right: rem(30);
+      ;
+    }
   }
 
   &__text {
@@ -162,12 +235,37 @@
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: rem(6);
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 .offer {
 
+  &__title {
+    font-size: rem(24);
+
+    @media screen and (min-width: 768px) {
+      font-size: rem(36);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: rem(42);
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 638px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__buttons {
+    font-size: rem(16);
     margin-bottom: rem(20);
     display: flex;
     gap: rem(30);
@@ -202,6 +300,18 @@
     &:hover::after {
       transform: translate3d(0, 0, 0);
     }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: rem(30);
+      row-gap: rem(10);
+
+    }
+
+
   }
 
   .product {
@@ -239,15 +349,43 @@
   background-color: #000;
   color: var(--clr-white);
 
-  &__form {
-    width: 80%;
-      margin: 0 auto;
+  &__content {
+    @media screen and (min-width: 992px) {
+      display: flex;
+
+
+    }
   }
-  
+
+  &__form {
+    padding: 0 rem(40) 0;
+    width: 80%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 992px) {
+      flex: 1 1 50%;
+      margin-right: rem(10);
+    }
+  }
+
+  &__map {
+    @media screen and (min-width: 992px) {
+      flex: 0 1 50%;
+    }
+  }
+
 
   &__title {
     color: var(--clr-white);
     font-size: rem(24);
+
+    @media screen and (min-width: 768px) {
+      font-size: rem(36);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: rem(42);
+    }
 
     &::before {
       background-image: url("../images/icon-logo-white.png");
@@ -263,8 +401,7 @@
 
     display: flex;
     flex-direction: column;
-    // width: 80%;
-    // margin: 0 auto;
+
 
     &__top {
       @media screen and (min-width: 576px) {
@@ -276,17 +413,17 @@
     &__bottom {
       @media screen and (min-width: 576px) {
         display: flex;
-      gap: rem(15);
-      margin-bottom: rem(20);
+        gap: rem(15);
+        margin-bottom: rem(20);
       }
-      
+
     }
 
     &__content {
       @media screen and (min-width: 576px) {
         flex: 0 1 33.333%;
       }
-      
+
     }
 
     &__lable {
@@ -305,9 +442,9 @@
 
       &--text {
         @media screen and (min-width: 576px) {
-            flex: 0 1 50%;
+          flex: 0 1 50%;
+        }
       }
-    }
 
       &--tel {
         width: 80%;
@@ -345,12 +482,23 @@
 
   &__logo {
     margin-bottom: rem(20);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: rem(30);
+    }
   }
 
   &__menu-items {
@@ -361,6 +509,10 @@
     font-size: rem(13);
     font-weight: 600;
     margin-bottom: rem(20);
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 
   &__menu-item {
@@ -381,11 +533,15 @@
     border: 2px solid #d0d0d0;
     margin-bottom: rem(30);
 
+    @media screen and (min-width: 1200px) {
+      margin-right: rem(200);
+      margin-bottom: 0;
+    }
+
     &:hover {
       background-color: #774430;
       border: 2px solid transparent;
     }
-
   }
 
   &__insta {
