@@ -23,72 +23,74 @@
                     <a class="logo" href="#">
                         <img class="logo__img" src="./images/logo.png" alt="logo">
                     </a>
-                    <ul class="menu__list">
-                        <li class="menu__item ">
-                            <a class="menu__link" href="#home">
-                                home
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#chef">
-                                chef
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#holidays">
-                                holidays
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#holidays">
-                                menu
-                            </a>
-                            <ul class="menu__sub dropdown">
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        breakfast
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        apetizers
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        salads
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        hot dishes
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        deserts
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        wine sets
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#english">
-                                english
-                            </a>
-                            <ul class="menu__sub dropdown">
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        russian
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item ">
+                                <a class="menu__link" href="#home">
+                                    home
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#chef">
+                                    chef
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#holidays">
+                                    holidays
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item--dd">
+                                <a class="menu__link" href="#holidays">
+                                    menu <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="menu__dropdown dropdown">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            breakfast
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            apetizers
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            salads
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            hot dishes
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            deserts
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            wine sets
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link flag flag--eng" href="#english">
+                                    english <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="menu__dropdown dropdown">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link flag flag--rus" href="#">
+                                            russian
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="menu__btns">
                         <a class="menu__btn btn hover-btn menu__btn--tel" href="tel:+375296778989">+375(29)6778989</a>
                         <a class="menu__btn btn hover-btn" href="#">reservation</a>
@@ -193,26 +195,26 @@
                 <div class="offer__content">
                     <ul class="offer__buttons">
                         <li>
-                            <button class="offer__btn" type="button">Breakfast</button>
+                            <button class="offer__btn" type="button" data-id="breakfast">Breakfast</button>
                         </li>
                         <li>
-                            <button class="offer__btn" type="button">Appetizers</button>
+                            <button class="offer__btn" type="button" data-id="apetizers">Appetizers</button>
                         </li>
                         <li>
-                            <button class="offer__btn" type="button">Salads</button>
+                            <button class="offer__btn" type="button" data-id="salads">Salads</button>
                         </li>
                         <li>
-                            <button class="offer__btn" type="button">Wine sets</button>
+                            <button class="offer__btn" type="button" data-id="wine">Wine sets</button>
                         </li>
                         <li>
-                            <button class="offer__btn" type="button">Hot dishes</button>
+                            <button class="offer__btn" type="button" data-id="hot">Hot dishes</button>
                         </li>
                         <li>
-                            <button class="offer__btn" type="button">Desserts</button>
+                            <button class="offer__btn" type="button" data-id="desserts">Desserts</button>
                         </li>
                     </ul>
                     <div class="offer__items tabs">
-                        <ul class="offer__item tabs__breakfast">
+                        <ul class="offer__item tabs__breakfast" id="breakfast">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/breakfast/eng_breakfast.jpg"
@@ -378,7 +380,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <!-- <ul class="offer__item tabs__apetizers">
+                        <ul class="offer__item tabs__apetizers" id="apetizers">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/appetizers/salmon.jpg"
@@ -455,7 +457,7 @@
                             </li>
 
                         </ul>
-                        <ul class="offer__item tabs__salads">
+                        <ul class="offer__item tabs__salads" id="salads">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/salads/kalbi_beef.jpg"
@@ -503,7 +505,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <ul class="offer__item tabs__wine">
+                        <ul class="offer__item tabs__wine" id="wine">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/wine/bruschetta.jpg" alt="Bruschetta">
@@ -537,7 +539,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <ul class="offer__item tabs__hot">
+                        <ul class="offer__item tabs__hot" id="hot">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/hot_dishes/beef_tagliata.jpg"
@@ -617,7 +619,7 @@
                                 </article>
                             </li>
                         </ul>
-                        <ul class="offer__item tabs__desserts">
+                        <ul class="offer__item tabs__desserts" id="desserts">
                             <li>
                                 <article class="product">
                                     <img class="product__img" src="./images/desserts/cheesecake_light.jpg"
@@ -679,7 +681,7 @@
                                     </div>
                                 </article>
                             </li>
-                        </ul> -->
+                        </ul>
                     </div>
                 </div>
             </div>

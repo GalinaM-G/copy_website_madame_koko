@@ -276,7 +276,17 @@ body {
     font-weight: 600;
   }
 }
+.header .menu__item--dd {
+  margin-right: 0.9375rem;
+}
 .header .menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -286,8 +296,53 @@ body {
     color: var(--clr-btn-hov);
   }
 }
+.header .menu .fa-chevron-down {
+  color: var(--clr-btn-hov);
+  font-size: 0.5rem;
+}
 .header .menu .dropdown {
   display: none;
+  position: absolute;
+  background-color: #000;
+  padding: 1.5625rem 1.25rem;
+  z-index: 1;
+}
+.header .menu .dropdown__item {
+  color: var(--clr-btn-hov);
+  text-transform: capitalize;
+  padding: 0.3125rem 0.9375rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header .menu .dropdown__item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.header .menu .dropdown__item:hover {
+  color: var(--clr-white);
+}
+.header .menu .menu__item:hover .dropdown {
+  display: block;
+}
+.header .menu .flag {
+  position: relative;
+}
+.header .menu .flag::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 12px;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  left: -22px;
+}
+.header .menu .flag--eng::before {
+  background-image: url("../images/en.png");
+}
+.header .menu .flag--rus::before {
+  background-image: url("../images/ru.png");
 }
 .header .menu .burger {
   position: relative;
@@ -490,14 +545,25 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
+.offer__item {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .offer__item {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 1.875rem;
        -moz-column-gap: 1.875rem;
             column-gap: 1.875rem;
     row-gap: 0.625rem;
+  }
+}
+.offer__item.active {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .offer__item.active {
+    display: grid;
   }
 }
 .offer .product {

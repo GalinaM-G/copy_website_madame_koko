@@ -1,17 +1,22 @@
-const swiper = new swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
+const offerCont = document.querySelector(".offer__content");
+const btns = document.querySelectorAll(".offer__btn");
+const tabs = document.querySelectorAll(".offer__item");
 
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+offerCont.addEventListener("click", function (e) {
+    const id = e.target.dataset.id;
+    if (id) {
+        // remove selected from other buttons
+        btns.forEach(function (btn) {
+            btn.classList.remove("active");
+        });
+        e.target.classList.add("active");
+        // hide other tabs
+        tabs.forEach(function (article) {
+            article.classList.remove("active");
+        });
+        const element = document.getElementById(id);
+        element.classList.add("active");
+    }
 });
