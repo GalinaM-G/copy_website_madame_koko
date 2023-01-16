@@ -510,6 +510,7 @@
       width: 100%;
       height: rem(34);
       border-radius: 3px;
+      padding: rem(10);
       margin-bottom: rem(15);
 
       &--text {
@@ -542,31 +543,74 @@
 
 .slider {
 
- 
+
 
   .swiper {
-   
+
 
     &__text p {
       @include line-clamp(2);
       padding: rem(5) 0;
       text-align: center;
-      
+    }
+
+    &__link {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.7;
+        transition: background-color 0.3s;
+      }
+
+      &:hover::before {
+        background-color: #000;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        background-image: url("../images/icon-insta-white.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        right: 7px;
+        bottom: 7px;
+      }
+
+      &:hover::after {
+        display: block;
+      }
+
+
+
+
     }
 
     &__img {
-      min-height: 338px;
+      height: rem(350);
+      width: 100%;
       object-fit: cover;
-    }
-  }
 
-  .swiper-slide {
-   flex: 0 0 auto;
+      @media screen and (min-width: 480px) {
+        height: rem(250);
+      }
+
+      @media screen and (min-width: 640px) {
+        height: rem(200);
+      }
+    }
   }
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 55%;
     color: #000;
     width: 28px;
     height: 28px;
@@ -587,7 +631,6 @@
     font-size: rem(10);
     font-weight: 900;
   }
-
 }
 
 .footer {
@@ -641,7 +684,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: rem(10) rem(12) rem(7);
+    padding: rem(10) rem(12) rem(9) rem(14);
     border: 2px solid #d0d0d0;
     margin-bottom: rem(30);
 

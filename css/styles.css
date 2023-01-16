@@ -694,6 +694,7 @@ body {
   width: 100%;
   height: 2.125rem;
   border-radius: 3px;
+  padding: 0.625rem;
   margin-bottom: 0.9375rem;
 }
 @media screen and (min-width: 576px) {
@@ -732,19 +733,57 @@ body {
   padding: 0.3125rem 0;
   text-align: center;
 }
+.slider .swiper__link {
+  position: relative;
+}
+.slider .swiper__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.slider .swiper__link:hover::before {
+  background-color: #000;
+}
+.slider .swiper__link::after {
+  content: "";
+  position: absolute;
+  display: none;
+  background-image: url("../images/icon-insta-white.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  right: 7px;
+  bottom: 7px;
+}
+.slider .swiper__link:hover::after {
+  display: block;
+}
 .slider .swiper__img {
-  min-height: 338px;
+  height: 21.875rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.slider .swiper-slide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+@media screen and (min-width: 480px) {
+  .slider .swiper__img {
+    height: 15.625rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .slider .swiper__img {
+    height: 12.5rem;
+  }
 }
 .slider .swiper-button-prev,
 .slider .swiper-button-next {
-  top: 55%;
   color: #000;
   width: 28px;
   height: 28px;
@@ -836,7 +875,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.625rem 0.75rem 0.4375rem;
+  padding: 0.625rem 0.75rem 0.5625rem 0.875rem;
   border: 2px solid #d0d0d0;
   margin-bottom: 1.875rem;
 }
