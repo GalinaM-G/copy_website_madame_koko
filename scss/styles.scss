@@ -42,7 +42,6 @@
     @media screen and (min-width: 1200px) {
       font-size: rem(17);
     }
-
   }
 
   &__subtitle {
@@ -59,7 +58,6 @@
     @media screen and (min-width: 1200px) {
       font-size: rem(37);
     }
-
   }
 
   &__subtitle span {
@@ -176,7 +174,6 @@
       &--rus::before {
         background-image: url('../images/ru.png');
       }
-
     }
 
     .burger {
@@ -259,7 +256,6 @@
       background-color: var(--clr-btn-hov);
     }
   }
-
 }
 
 .legend {
@@ -374,7 +370,6 @@
       column-gap: rem(30);
       row-gap: rem(10);
     }
-
   }
 
   &__item.active {
@@ -413,7 +408,6 @@
       margin-bottom: rem(10);
     }
   }
-
 }
 
 .contact {
@@ -423,13 +417,10 @@
   &__content {
     @media screen and (min-width: 992px) {
       display: flex;
-
-
     }
   }
 
   &__form {
-
     width: 80%;
     margin: 0 auto;
 
@@ -450,8 +441,6 @@
       width: 100%;
     }
   }
-
-
 
   &__title {
     color: var(--clr-white);
@@ -476,10 +465,8 @@
   }
 
   .form {
-
     display: flex;
     flex-direction: column;
-
 
     &__top {
       @media screen and (min-width: 576px) {
@@ -494,14 +481,14 @@
         gap: rem(15);
         margin-bottom: rem(20);
       }
-
     }
 
     &__content {
+      display: flex;
+      flex-direction: column;
       @media screen and (min-width: 576px) {
         flex: 0 1 33.333%;
       }
-
     }
 
     &__lable {
@@ -549,10 +536,7 @@
 
 .slider {
 
-
-
   .swiper {
-
 
     &__text p {
       @include line-clamp(2);
