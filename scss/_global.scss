@@ -25,16 +25,14 @@ body {
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    
     font-family: var(--ff-primary);
     font-weight: 400;
     font-size: rem(14);
     color: var(--clr-font-primary);
     line-height: 1.6;
     background-color: var(--clr-white);
-    overflow-x: hidden;
+    
 }
 
 .main {
@@ -42,6 +40,8 @@ body {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
 }
 

@@ -91,20 +91,12 @@ body {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: var(--ff-primary);
   font-weight: 400;
   font-size: 0.875rem;
   color: var(--clr-font-primary);
   line-height: 1.6;
   background-color: var(--clr-white);
-  overflow-x: hidden;
 }
 
 .main {
@@ -114,6 +106,13 @@ body {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-x: hidden;
 }
 
