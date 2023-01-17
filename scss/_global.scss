@@ -36,9 +36,12 @@ body {
     overflow-x: hidden;
 }
 
-
 .main {
     flex-grow: 1;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 .container {
@@ -82,7 +85,7 @@ body {
         font-weight: 600;
     }
 
-    &::before{
+    &::before {
         position: absolute;
         content: '';
         background-image: url("../images/icon-logo.png");

@@ -113,6 +113,10 @@ body {
           flex-grow: 1;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1890px;
   margin: 0 auto;
@@ -629,6 +633,9 @@ body {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
+}
+.contact__map iframe {
+  width: 100%;
 }
 .contact__title {
   color: var(--clr-white);

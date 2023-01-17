@@ -441,10 +441,16 @@
   }
 
   &__map {
+
     @media screen and (min-width: 992px) {
       flex: 0 1 50%;
     }
+
+    & iframe {
+      width: 100%;
+    }
   }
+
 
 
   &__title {
