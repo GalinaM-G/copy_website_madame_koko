@@ -91,21 +91,6 @@ body {
 }
 
 body {
-  font-family: var(--ff-primary);
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: var(--clr-font-primary);
-  line-height: 1.6;
-  background-color: var(--clr-white);
-}
-
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +99,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--clr-font-primary);
+  line-height: 1.6;
+  background-color: var(--clr-white);
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .container {
@@ -184,6 +181,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  background-image: url("../images/hero_bgr.jpg");
   background-size: cover;
   background-position: center center;
   position: relative;

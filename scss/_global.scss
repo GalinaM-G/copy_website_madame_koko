@@ -25,25 +25,23 @@ body {
 }
 
 body {
-    
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
     font-family: var(--ff-primary);
     font-weight: 400;
     font-size: rem(14);
     color: var(--clr-font-primary);
     line-height: 1.6;
     background-color: var(--clr-white);
-    
+
 }
 
-.main {
+main {
+   
     flex-grow: 1;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
 
 .container {
     max-width: 1890px;
